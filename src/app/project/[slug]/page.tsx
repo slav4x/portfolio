@@ -1,5 +1,5 @@
-import { fetchProject } from '@/hooks/api';
 import { ProjectPage } from '@/components';
+import { fetchProject } from '@/hooks/api';
 
 interface PageProps {
 	params: Promise<{ slug: string }>;

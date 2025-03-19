@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import styles from './ProjectsList.module.sass';
-
-import { useProjects } from '@/hooks/useProjects';
+import { useRef, useState } from 'react';
 
 import { ProjectItem } from '@/components';
+import { useProjects } from '@/hooks/useProjects';
 import { Project } from '@/types';
+
+import styles from './ProjectsList.module.sass';
 
 export default function ProjectsList() {
 	const { data: projects } = useProjects();

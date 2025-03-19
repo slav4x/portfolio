@@ -1,4 +1,5 @@
 import { Tags } from '@/components';
+
 import styles from './About.module.sass';
 
 const tagsList = [

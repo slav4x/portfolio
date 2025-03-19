@@ -1,11 +1,11 @@
-import Providers from './_providers';
-
-import localFont from 'next/font/local';
-
 import '@/styles/normalize.sass';
 import '@/styles/global.sass';
 
+import localFont from 'next/font/local';
+
 import { Header } from '@/components';
+
+import Providers from './_providers';
 
 const baseFont = localFont({
 	src: [{ path: '../assets/fonts/PPNeueMontreal-Medium.woff2', weight: '500', style: 'normal' }],
@@ -23,7 +23,9 @@ export default function RootLayout({
 			<body className={baseFont.variable}>
 				<div className="layout">
 					<Header />
-					<Providers>{children}</Providers>
+					<div className="main">
+						<Providers>{children}</Providers>
+					</div>
 				</div>
 			</body>
 		</html>

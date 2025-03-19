@@ -1,7 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchProject } from './api';
-import { Project } from '@/types';
 import { useQueryClient } from '@tanstack/react-query';
+
+import { Project } from '@/types';
+
+import { fetchProject } from './api';
 
 export function useProject(slug: string) {
 	const queryClient = useQueryClient();

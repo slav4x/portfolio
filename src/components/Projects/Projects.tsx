@@ -1,6 +1,7 @@
-import { HydrationBoundary, QueryClient, dehydrate } from '@tanstack/react-query';
-import { fetchProjects } from '@/hooks/api';
+import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query';
+
 import { ProjectsList } from '@/components';
+import { fetchProjects } from '@/hooks/api';
 
 import styles from './Projects.module.sass';
 

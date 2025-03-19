@@ -1,7 +1,8 @@
 import Link from 'next/link';
 
-import { Project } from '@/types';
 import { Tags } from '@/components';
+import { Project } from '@/types';
+
 import styles from './ProjectPage.module.sass';
 
 interface ProjectPageProps {

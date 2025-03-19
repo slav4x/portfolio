@@ -1,9 +1,9 @@
-import Link from 'next/link';
 import Image from 'next/image';
-
-import styles from './Header.module.sass';
+import Link from 'next/link';
 
 import { ButtonTelegram } from '@/components';
+
+import styles from './Header.module.sass';
 
 export default function Header() {
 	return (

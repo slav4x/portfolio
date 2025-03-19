@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+
 import { projects } from '@/data/projects';
 import { Project } from '@/types';
 

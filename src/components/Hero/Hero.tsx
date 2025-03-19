@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import styles from './Hero.module.sass';
-
 import { Button, ButtonTelegram } from '@/components';
+
+import styles from './Hero.module.sass';
 
 export default function Hero() {
 	return (
