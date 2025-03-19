@@ -5,8 +5,14 @@ import { ProjectsList } from '@/components';
 import styles from './Projects.module.sass';
 
 export default async function Projects() {
-	const queryClient = new QueryClient();
-
+	const queryClient = new QueryClient({
+		defaultOptions: {
+			queries: {
+				staleTime: 1000 * 60 * 60,
+				gcTime: 1000 * 60 * 60
+			}
+		}
+	});
 	await queryClient.prefetchQuery({
 		queryKey: ['projects'],
 		queryFn: fetchProjects

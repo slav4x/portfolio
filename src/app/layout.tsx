@@ -23,9 +23,7 @@ export default function RootLayout({
 			<body className={baseFont.variable}>
 				<div className="layout">
 					<Header />
-					<div className="main">
-						<Providers>{children}</Providers>
-					</div>
+					<Providers>{children}</Providers>
 				</div>
 			</body>
 		</html>

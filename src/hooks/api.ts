@@ -8,7 +8,9 @@ export async function fetchProjects() {
 }
 
 export async function fetchProject(slug: string) {
-	const res = await fetch(`${API_URL}/api/project/${slug}`);
+	const res = await fetch(`${API_URL}/api/project/${slug}`, {
+		cache: 'force-cache'
+	});
 	if (!res.ok) throw new Error('Проект не найден');
 	return res.json();
 }

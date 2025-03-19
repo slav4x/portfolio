@@ -1,21 +1,15 @@
-'use client';
-
-import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
-import { useProject } from '@/hooks';
-
-import styles from './ProjectPage.module.sass';
+import { Project } from '@/types';
 import { Tags } from '@/components';
+import styles from './ProjectPage.module.sass';
 
-export default function ProjectPageContent({ slug }: { slug?: string }) {
-	const params = useParams();
-	const projectSlug = slug || (params?.slug as string);
+interface ProjectPageProps {
+	project: Project;
+}
 
-	const { data: project, isLoading, error } = useProject(projectSlug);
-
-	if (isLoading) return <p>Загрузка...</p>;
-	if (error) return <p>Ошибка загрузки</p>;
+export default function ProjectPageContent({ project }: ProjectPageProps) {
+	if (!project) return <p>Ошибка загрузки</p>;
 
 	return (
 		<>

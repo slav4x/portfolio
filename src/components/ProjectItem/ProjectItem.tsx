@@ -35,7 +35,7 @@ export default function ProjectItem({ project, onMouseEnter, onMouseLeave }: Pro
 			viewport={{ once: true, amount: 0.3 }}
 			transition={{ duration: 0.8, ease: 'easeOut' }}
 		>
-			<Link href={href}>
+			<Link href={href} prefetch={true}>
 				<div className={styles.wrapper}>
 					<div className={styles.name}>
 						<span className={styles.date}>{year}</span>
