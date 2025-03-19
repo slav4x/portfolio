@@ -1,0 +1,76 @@
+@import './variables'
+
+body
+	font-family: var(--font-base)
+	font-size: 16px
+	font-weight: 500
+	color: var(--color-black)
+
+.layout
+	background: #f5f5f5
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	gap: var(--gap)
+	align-items: flex-start
+	justify-content: flex-start
+	overflow: visible
+	padding: var(--gap)
+	position: relative
+	width: 100%
+
+.main
+	width: 100%
+	background: #fff
+	border-radius: 12px
+	overflow: hidden
+
+.container
+	max-width: 1056px
+	width: 100%
+	margin: 0 auto
+	padding: 0 calc(var(--gap) * 2)
+
+.title
+	font-size: 24px
+	font-weight: 500
+	line-height: 1.4
+	width: 100%
+	color: var(--color-black)
+
+.text
+	max-width: 600px
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	gap: calc(var(--gap) * 2)
+	color: var(--color-gray)
+	line-height: 1.4
+	font-size: 18px
+	b
+		font-weight: 500
+		color: var(--color-black)
+	a
+		color: var(--color-black)
+	&-link
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		a
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			gap: 4px
+			&::after
+				content: ''
+				display: block
+				width: 14px
+				height: 14px
+				background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.23714 3.76929V4.84621H9.24798L3.65381 10.0101L4.47631 10.7693L10.0705 5.60544V10.2308H11.2371V3.76929H4.23714Z' fill='%2323282F'/%3E%3C/svg%3E%0A") no-repeat center
+			span
+				border-bottom: 1px solid transparent
+				transition: .3s
+			&:hover span
+				border-color: var(--color-black)

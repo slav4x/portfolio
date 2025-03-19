@@ -1,0 +1,58 @@
+.info
+	padding: var(--section-padding) 0
+
+.title
+	font-size: 48px
+	line-height: 1.2
+	font-weight: 500
+	span
+		color: var(--color-gray)
+
+.head
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	flex-direction: column
+	gap: calc(var(--gap) * 1.5)
+
+.tags
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	gap: var(--gap)
+	li
+		font-size: 14px
+		line-height: 14px
+		color: var(--color-gray)
+		padding: 4px 8px
+		background: var(--color-light-gray)
+		border-radius: 99px
+
+.row
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	gap: calc(var(--gap) * 16)
+	margin-top: calc(var(--gap) * 4)
+
+.stack
+	flex: 1
+
+.gallery
+	padding-bottom: var(--section-padding)
+
+.grid
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	gap: calc(var(--gap) * 2)
+	li
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		border-radius: 8px
+		background: var(--color-light-gray)
+		padding: calc(var(--gap) * 3)
+		aspect-ratio: 1
+		img
+			max-height: 100%

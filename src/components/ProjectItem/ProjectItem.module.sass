@@ -1,0 +1,59 @@
+.item
+	border-bottom: 1px solid var(--color-light-gray)
+
+.wrapper
+	display: flex
+	flex-wrap: nowrap
+	align-items: center
+	gap: calc(var(--gap) * 3)
+	padding: calc(var(--gap) * 1.5) 0
+	min-height: 72px
+
+.name
+	width: 28%
+	font-size: 20px
+	line-height: 28px
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	gap: var(--gap)
+
+.date
+	color: var(--color-gray)
+
+.tags
+	width: 35%
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	gap: var(--gap)
+	li
+		font-size: 14px
+		line-height: 14px
+		color: var(--color-gray)
+		padding: 4px 8px
+		background: var(--color-light-gray)
+		border-radius: 99px
+
+.thumbnails
+	flex: 1
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	gap: var(--gap)
+
+.thumbnailsItem
+	width: 48px
+	height: 48px
+	display: block
+	padding: 4px
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	border-radius: 4px
+	background: var(--color-light-gray)
+	font-size: 14px
+	color: var(--color-gray)
+	img
+		max-height: 100%
